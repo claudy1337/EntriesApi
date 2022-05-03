@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using EntriesApi.Model;
 using EntriesApi.Services;
+using EntriesApi.ViewModel;
+
 
 namespace EntriesApi
 {
