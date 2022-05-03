@@ -16,6 +16,7 @@ namespace EntriesApi.ViewModel
         public EntriesListPage()
         {
             InitializeComponent();
+            
         }
         protected async override void OnAppearing()
         {
@@ -27,15 +28,12 @@ namespace EntriesApi.ViewModel
         private void sbSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
             var searchText = SBSearchAPI.Text.ToLower();
-
-
             lvEntries.ItemsSource = Entries.Where(en => en.API.ToLower().Contains(searchText) || en.Description.ToLower().Contains(searchText));
         }
 
         private async void lvEntries_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var entry = lvEntries.SelectedItem as EntryModel;
-
+            
             
         }
     }

@@ -35,7 +35,7 @@ namespace EntriesApi.Services
                 }
                 else
                 {
-                    Debug.WriteLine("Bad Requset");
+                    Debug.WriteLine("error entries api");
                 }
             }
             catch (Exception ex)
