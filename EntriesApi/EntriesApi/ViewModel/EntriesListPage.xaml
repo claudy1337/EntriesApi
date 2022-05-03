@@ -5,7 +5,7 @@
     <StackLayout>
         <StackLayout Orientation="Horizontal">
             <SearchBar x:Name="SBSearchAPI" Placeholder="Search" TextChanged="sbSearch_TextChanged"/>
-            <Picker x:Name="PCCategory" HeightRequest="50" WidthRequest="50" BackgroundColor="White" TextColor="Black" ItemsSource="{Binding Category}"/>
+            <Picker x:Name="PCCategory" HeightRequest="50" WidthRequest="50" BackgroundColor="White" SelectedIndexChanged="PCCategory_SelectedIndexChanged" TextColor="Black" ItemsSource="{Binding Path=Entries.Category}"/>
         </StackLayout>
         
         <ListView x:Name="lvEntries" HasUnevenRows="True" ItemSelected="lvEntries_ItemSelected">
